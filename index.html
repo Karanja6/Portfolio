@@ -3,11 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Miriam Wambui – Backend Developer & ML Engineer</title>
-  <meta name="description" content="Miriam Wambui — Backend Developer and Machine Learning Engineer. FastAPI, Spring Boot, Python, ML pipelines, LightGBM, APIs, microservices, data-driven solutions." />
+
+  <title>Miriam Wambui – Software Developer & AI Enthusiast</title>
+
+  <meta
+    name="description"
+    content="Miriam Wambui — Software Developer with experience in backend development, APIs, microservices, AI-powered applications, coding instruction, digital support, and technology-driven solutions."
+  />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Inter:wght@300;400;600&display=swap"
+    rel="stylesheet"
+  >
+
   <style>
     :root {
       --bg: #0b0f1a;
@@ -21,100 +31,388 @@
       --shadow: 0 10px 30px rgba(0,0,0,.35);
       --radius: 18px;
     }
+
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
+
     body {
-      margin: 0; color: var(--text); background: radial-gradient(1000px 600px at 80% -10%, rgba(91,140,255,.12), transparent 60%),
-      radial-gradient(800px 500px at -10% 30%, rgba(255,110,199,.12), transparent 60%), var(--bg);
+      margin: 0;
+      color: var(--text);
+      background:
+        radial-gradient(1000px 600px at 80% -10%, rgba(91,140,255,.12), transparent 60%),
+        radial-gradient(800px 500px at -10% 30%, rgba(255,110,199,.12), transparent 60%),
+        var(--bg);
       font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
       line-height: 1.6;
     }
+
     a { color: inherit; text-decoration: none; }
     img { max-width: 100%; display: block; }
 
-    /* Layout */
-    .container { width: min(1120px, 92%); margin: 0 auto; }
+    .container {
+      width: min(1120px, 92%);
+      margin: 0 auto;
+    }
+
     header.nav {
-      position: sticky; top: 0; z-index: 50; backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(10px);
       background: linear-gradient(180deg, rgba(11,15,26,.85), rgba(11,15,26,.6));
       border-bottom: 1px solid rgba(255,255,255,.06);
     }
-    .nav-inner { display:flex; align-items:center; justify-content:space-between; padding: 14px 0; }
-    .brand { font-family: Montserrat, sans-serif; font-weight: 800; letter-spacing: .5px; }
-    .brand span { background: linear-gradient(90deg, var(--accent1), var(--accent2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
-    nav ul { display:flex; gap: 20px; list-style: none; margin:0; padding:0; }
-    nav a { padding: 8px 12px; border-radius: 999px; color: var(--muted); font-weight: 600; }
-    nav a:hover { color: var(--text); background: var(--glass); }
-    .btn {
-      display:inline-flex; align-items:center; gap:10px; padding: 12px 18px; border-radius: 12px; border: 1px solid rgba(255,255,255,.12);
-      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03)); color: var(--text); font-weight: 700; box-shadow: var(--shadow);
-      transition: transform .2s ease, box-shadow .2s ease; cursor: pointer;
+
+    .nav-inner {
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding: 14px 0;
     }
-    .btn:hover { transform: translateY(-2px); box-shadow: 0 14px 30px rgba(0,0,0,.4); }
-    .btn.primary { border: none; background: linear-gradient(90deg, var(--accent1), var(--accent2)); }
 
-    /* Hero */
-    .hero { position: relative; padding: 90px 0 70px; overflow: hidden; }
-    .hero-grid { display:grid; grid-template-columns: 1.2fr 1fr; gap: 40px; align-items: center; }
-    .tag { display:inline-block; font-size: 12px; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); border:1px solid rgba(255,255,255,.12); padding:6px 10px; border-radius:999px; }
-    h1 { font-family: Montserrat, sans-serif; font-size: clamp(32px, 4.6vw, 60px); line-height: 1.1; margin: 14px 0; }
-    .gradient-text { background: linear-gradient(90deg, var(--accent1), var(--accent2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
-    .lead { color: var(--muted); font-size: 18px; }
-    .cta-row { display:flex; gap:14px; margin-top: 24px; flex-wrap: wrap; }
-    .hero-card { background: var(--card); border:1px solid rgba(255,255,255,.08); padding: 16px; border-radius: var(--radius); display:flex; gap:12px; align-items:center; }
-    .hero-stats { display:grid; grid-template-columns: repeat(2, 1fr); gap:12px; margin-top: 14px; }
+    .brand {
+      font-family: Montserrat, sans-serif;
+      font-weight: 800;
+      letter-spacing: .5px;
+    }
 
-    /* Sections */
-    section { padding: 80px 0; }
-    .section-title { font-family: Montserrat; font-weight: 800; font-size: 28px; margin-bottom: 10px; }
-    .section-sub { color: var(--muted); margin-bottom: 26px; }
+    .brand span {
+      background: linear-gradient(90deg, var(--accent1), var(--accent2));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
 
-    /* About */
-    .about { display:grid; grid-template-columns: 1fr 1fr; gap: 30px; }
-    .about-card { background: var(--card); border:1px solid rgba(255,255,255,.08); border-radius: var(--radius); padding: 22px; }
+    nav ul {
+      display:flex;
+      gap: 20px;
+      list-style: none;
+      margin:0;
+      padding:0;
+    }
 
-    /* Skills */
-    .chips { display:flex; flex-wrap: wrap; gap:10px; }
-    .chip { padding:8px 12px; border-radius: 999px; background: rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.08); color: #dbe2ff; font-weight: 600; font-size: 14px; }
-    .badges { display:grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 14px; margin-top: 14px; }
-    .badge { padding: 16px; border-radius: 14px; background: var(--card); border:1px solid rgba(255,255,255,.08); text-align:center; font-weight: 700; }
+    nav a {
+      padding: 8px 12px;
+      border-radius: 999px;
+      color: var(--muted);
+      font-weight: 600;
+    }
 
-    /* Projects */
-    .grid { display:grid; grid-template-columns: repeat(12, 1fr); gap: 18px; }
-    .card { grid-column: span 6; background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02)); border:1px solid rgba(255,255,255,.1); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); transition: transform .25s ease; }
-    .card:hover { transform: translateY(-4px); }
-    .card-media { aspect-ratio: 16/9; background: linear-gradient(90deg, rgba(91,140,255,.25), rgba(255,110,199,.25)); display:flex; align-items:center; justify-content:center; color:#0b0f1a; font-weight: 800; letter-spacing: .1em; }
-    .card-body { padding: 18px; }
-    .card h3 { margin: 0 0 6px; font-family: Montserrat; }
-    .pill { display:inline-block; font-size: 12px; color: var(--muted); border:1px solid rgba(255,255,255,.15); padding:4px 8px; border-radius: 999px; margin-right: 6px; }
-    .actions { display:flex; gap:10px; margin-top: 14px; }
+    nav a:hover {
+      color: var(--text);
+      background: var(--glass);
+    }
 
-    /* Contact */
-    .contact-wrap { display:grid; grid-template-columns: 1.2fr .8fr; gap: 24px; }
-    form { background: var(--card); border:1px solid rgba(255,255,255,.08); border-radius: var(--radius); padding: 20px; }
-    label { display:block; font-weight: 600; margin: 10px 0 6px; }
-    input, textarea { width: 100%; padding: 12px 14px; border-radius: 12px; border:1px solid rgba(255,255,255,.14); background: rgba(255,255,255,.04); color: var(--text); }
-    textarea { min-height: 140px; resize: vertical; }
+    .btn {
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding: 12px 18px;
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,.12);
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+      color: var(--text);
+      font-weight: 700;
+      box-shadow: var(--shadow);
+      transition: transform .2s ease, box-shadow .2s ease;
+      cursor: pointer;
+    }
 
-    /* Footer */
-    footer { padding: 24px 0 60px; color: var(--muted); text-align: center; }
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 30px rgba(0,0,0,.4);
+    }
 
-    /* Utilities */
-    .row { display:flex; gap:12px; flex-wrap: wrap; }
-    .hide { display:none; }
+    .btn.primary {
+      border: none;
+      background: linear-gradient(90deg, var(--accent1), var(--accent2));
+    }
 
-    /* Responsive */
+    .hero {
+      position: relative;
+      padding: 90px 0 70px;
+      overflow: hidden;
+    }
+
+    .hero-grid {
+      display:grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .tag {
+      display:inline-block;
+      font-size: 12px;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--muted);
+      border:1px solid rgba(255,255,255,.12);
+      padding:6px 10px;
+      border-radius:999px;
+    }
+
+    h1 {
+      font-family: Montserrat, sans-serif;
+      font-size: clamp(32px, 4.6vw, 60px);
+      line-height: 1.1;
+      margin: 14px 0;
+    }
+
+    .gradient-text {
+      background: linear-gradient(90deg, var(--accent1), var(--accent2));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .lead {
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .cta-row {
+      display:flex;
+      gap:14px;
+      margin-top: 24px;
+      flex-wrap: wrap;
+    }
+
+    .hero-card {
+      background: var(--card);
+      border:1px solid rgba(255,255,255,.08);
+      padding: 16px;
+      border-radius: var(--radius);
+      display:flex;
+      gap:12px;
+      align-items:center;
+    }
+
+    .hero-stats {
+      display:grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap:12px;
+      margin-top: 14px;
+    }
+
+    section {
+      padding: 80px 0;
+    }
+
+    .section-title {
+      font-family: Montserrat;
+      font-weight: 800;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .section-sub {
+      color: var(--muted);
+      margin-bottom: 26px;
+    }
+
+    .about {
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+
+    .about-card {
+      background: var(--card);
+      border:1px solid rgba(255,255,255,.08);
+      border-radius: var(--radius);
+      padding: 22px;
+    }
+
+    .chips {
+      display:flex;
+      flex-wrap: wrap;
+      gap:10px;
+    }
+
+    .chip {
+      padding:8px 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.06);
+      border:1px solid rgba(255,255,255,.08);
+      color: #dbe2ff;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .badges {
+      display:grid;
+      grid-template-columns: repeat(4, minmax(0,1fr));
+      gap: 14px;
+      margin-top: 14px;
+    }
+
+    .badge {
+      padding: 16px;
+      border-radius: 14px;
+      background: var(--card);
+      border:1px solid rgba(255,255,255,.08);
+      text-align:center;
+      font-weight: 700;
+    }
+
+    .grid {
+      display:grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 18px;
+    }
+
+    .card {
+      grid-column: span 6;
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+      border:1px solid rgba(255,255,255,.1);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: transform .25s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+    }
+
+    .card-media {
+      aspect-ratio: 16/9;
+      background: linear-gradient(90deg, rgba(91,140,255,.25), rgba(255,110,199,.25));
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:#0b0f1a;
+      font-weight: 800;
+      letter-spacing: .1em;
+    }
+
+    .card-body {
+      padding: 18px;
+    }
+
+    .card h3 {
+      margin: 0 0 6px;
+      font-family: Montserrat;
+    }
+
+    .pill {
+      display:inline-block;
+      font-size: 12px;
+      color: var(--muted);
+      border:1px solid rgba(255,255,255,.15);
+      padding:4px 8px;
+      border-radius: 999px;
+      margin-right: 6px;
+      margin-bottom: 6px;
+    }
+
+    .actions {
+      display:flex;
+      gap:10px;
+      margin-top: 14px;
+      flex-wrap: wrap;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 18px;
+    }
+
+    .tl-item {
+      background: var(--card);
+      border:1px solid rgba(255,255,255,.08);
+      border-radius: var(--radius);
+      padding: 22px;
+      box-shadow: var(--shadow);
+    }
+
+    .tl-title {
+      font-family: Montserrat;
+      font-weight: 800;
+      font-size: 18px;
+      margin-bottom: 6px;
+    }
+
+    .tl-meta {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .contact-wrap {
+      display:grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 24px;
+    }
+
+    form {
+      background: var(--card);
+      border:1px solid rgba(255,255,255,.08);
+      border-radius: var(--radius);
+      padding: 20px;
+    }
+
+    label {
+      display:block;
+      font-weight: 600;
+      margin: 10px 0 6px;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 12px 14px;
+      border-radius: 12px;
+      border:1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.04);
+      color: var(--text);
+    }
+
+    textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+
+    footer {
+      padding: 24px 0 60px;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    .row {
+      display:flex;
+      gap:12px;
+      flex-wrap: wrap;
+    }
+
+    .hide {
+      display:none;
+    }
+
     @media (max-width: 900px) {
-      .hero-grid, .about, .contact-wrap { grid-template-columns: 1fr; }
-      .card { grid-column: span 12; }
-      nav ul { display:none; }
+      .hero-grid,
+      .about,
+      .contact-wrap {
+        grid-template-columns: 1fr;
+      }
+
+      .card {
+        grid-column: span 12;
+      }
+
+      nav ul {
+        display:none;
+      }
     }
   </style>
 </head>
-<body>
+
+<body id="top">
   <header class="nav">
     <div class="container nav-inner">
       <div class="brand">Miriam <span>Wambui</span></div>
+
       <nav>
         <ul>
           <li><a href="#about">About</a></li>
@@ -124,6 +422,7 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+
       <div class="row">
         <button id="mode" class="btn" aria-label="Toggle dark mode">🌙</button>
         <a class="btn primary" href="#projects">View My Work</a>
@@ -134,25 +433,42 @@
   <section class="hero">
     <div class="container hero-grid">
       <div>
-        <span class="tag">Backend Dev • ML Engineer • Microservices</span>
-        <h1>Hi, I’m <span class="gradient-text">Miriam</span> — I build backend systems and ML solutions.</h1>
-        <p class="lead">With expertise in backend architectures, APIs, and machine learning models, I solve real-world challenges in fields like health-tech and agri-tech.</p>
+        <span class="tag">Software Developer • APIs • AI & Data</span>
+
+        <h1>
+          Hi, I’m <span class="gradient-text">Miriam</span> — I build practical digital solutions.
+        </h1>
+
+        <p class="lead">
+          I am a detail-oriented software developer with experience in backend development,
+          API integration, debugging, AI-powered applications, digital support, teaching coding,
+          and creating technology solutions that solve real-world problems.
+        </p>
+
         <div class="cta-row">
           <a class="btn primary" href="#contact">Let’s Collaborate</a>
           <a class="btn" href="#projects">See Projects</a>
         </div>
       </div>
+
       <div>
         <div class="card" style="padding:0;">
           <div class="card-media">PORTFOLIO</div>
+
           <div class="card-body">
             <h3>What I Do</h3>
-            <p>I build scalable backend systems, create APIs, and develop ML models that deliver impactful solutions. From architecture to deployment, I bring reliability and efficiency to every project.</p>
+
+            <p>
+              I build backend systems, REST APIs, AI-supported applications, and user-focused
+              digital products. I also have experience teaching robotics and coding, supporting
+              teams, documenting workflows, and communicating technical ideas clearly.
+            </p>
+
             <div class="row">
-              <span class="pill">APIs</span>
-              <span class="pill">Microservices</span>
-              <span class="pill">ML Models</span>
-              <span class="pill">FastAPI</span>
+              <span class="pill">Backend</span>
+              <span class="pill">REST APIs</span>
+              <span class="pill">AI Projects</span>
+              <span class="pill">Coding Instruction</span>
             </div>
           </div>
         </div>
@@ -163,19 +479,34 @@
   <section id="about">
     <div class="container">
       <h2 class="section-title">About Me</h2>
-      <p class="section-sub">Backend Developer & Machine Learning Engineer with experience in building scalable systems and solving real-world problems with data.</p>
+
+      <p class="section-sub">
+        A Computer Science graduate with hands-on experience in software development,
+        technical support, AI-related projects, coding instruction, and teamwork.
+      </p>
+
       <div class="about">
         <div class="about-card">
           <h3>Story</h3>
-          <p>I’m a Nairobi-based developer with a strong foundation in backend architecture, microservices, and machine learning. I work with tools like FastAPI, Spring Boot, and LightGBM to create reliable and impactful solutions.</p>
+
+          <p>
+            I am a Nairobi-based developer passionate about using technology to solve practical
+            problems. My experience includes backend development, microservices, APIs,
+            machine learning-based systems, IT support, robotics and coding instruction,
+            and marketing support.
+          </p>
         </div>
+
         <div class="about-card">
           <h3>Highlights</h3>
+
           <ul>
-            <li>Built scalable APIs and microservices using FastAPI and Spring Boot.</li>
-            <li>Designed ML pipelines for prediction and classification (LightGBM, SHAP).</li>
-            <li>Developed backend systems with robust error handling and scalability in mind.</li>
-            <li>Strong communicator and collaborative team member in Agile environments.</li>
+            <li>Built and tested backend microservices using Java Spring Boot.</li>
+            <li>Worked with RESTful APIs, Postman, Git, and GitLab workflows.</li>
+            <li>Developed technology projects in agriculture and healthcare.</li>
+            <li>Taught children robotics and coding through practical learning sessions.</li>
+            <li>Supported marketing, communication, and program coordination at STEM ROBO.</li>
+            <li>Worked in Agile environments with strong documentation and teamwork skills.</li>
           </ul>
         </div>
       </div>
@@ -185,16 +516,34 @@
   <section id="skills">
     <div class="container">
       <h2 class="section-title">Skills & Tools</h2>
-      <p class="section-sub">The technical stack I use to build reliable backend systems and machine learning solutions.</p>
+
+      <p class="section-sub">
+        The tools and abilities I use to build, test, support, and improve digital systems.
+      </p>
+
       <div class="chips">
-        <span class="chip">Python</span>
-        <span class="chip">FastAPI</span>
+        <span class="chip">Java</span>
         <span class="chip">Spring Boot</span>
-        <span class="chip">LightGBM</span>
-        <span class="chip">SHAP</span>
+        <span class="chip">Python</span>
+        <span class="chip">JavaScript</span>
         <span class="chip">Node.js</span>
-        <span class="chip">Docker</span>
-        <span class="chip">CI/CD</span>
+        <span class="chip">Express.js</span>
+        <span class="chip">FastAPI</span>
+        <span class="chip">REST APIs</span>
+        <span class="chip">Postman</span>
+        <span class="chip">Git</span>
+        <span class="chip">GitHub</span>
+        <span class="chip">GitLab</span>
+        <span class="chip">MySQL</span>
+        <span class="chip">Debugging</span>
+        <span class="chip">Testing</span>
+        <span class="chip">Documentation</span>
+        <span class="chip">AI & ML</span>
+        <span class="chip">Data Annotation</span>
+        <span class="chip">Robotics Teaching</span>
+        <span class="chip">Marketing Support</span>
+        <span class="chip">Team Coordination</span>
+        <span class="chip">Communication</span>
       </div>
     </div>
   </section>
@@ -202,37 +551,73 @@
   <section id="projects">
     <div class="container">
       <h2 class="section-title">Featured Projects</h2>
-      <p class="section-sub">These projects showcase my backend development and machine learning expertise in action.</p>
+
+      <p class="section-sub">
+        These projects showcase my backend development, API integration, and AI-related experience.
+      </p>
 
       <div class="grid">
         <article class="card" aria-labelledby="prj-cervi">
           <div class="card-media">CERVICARE</div>
+
           <div class="card-body">
-            <h3 id="prj-cervi">CerviCare — ML-driven Health Screening</h3>
-            <p>Developed a microservices platform using FastAPI for cancer risk assessment and predictions using machine learning models.</p>
+            <h3 id="prj-cervi">CerviCare — Healthcare Recommendation & Risk Assessment</h3>
+
+            <p>
+              Developed a healthcare recommendation and risk assessment platform using FastAPI,
+              Java Spring Boot, backend microservices, API integration, and AI/ML-based healthcare
+              prediction features.
+            </p>
+
             <div class="row">
               <span class="pill">FastAPI</span>
-              <span class="pill">ML</span>
+              <span class="pill">Spring Boot</span>
+              <span class="pill">AI/ML</span>
+              <span class="pill">APIs</span>
               <span class="pill">Microservices</span>
             </div>
+
             <div class="actions">
-              <a class="btn" href="https://cervicare-frontend-mknk.onrender.com/" target="_blank" rel="noopener">Live Demo</a>
+              <a
+                class="btn"
+                href="https://cervicare-frontend-mknk.onrender.com/"
+                target="_blank"
+                rel="noopener"
+              >
+                Live Demo
+              </a>
             </div>
           </div>
         </article>
 
         <article class="card" aria-labelledby="prj-shamba">
           <div class="card-media">SHAMBA SMART</div>
+
           <div class="card-body">
-            <h3 id="prj-shamba">Shamba Smart — Agricultural App</h3>
-            <p>Created a data-driven crop recommendation engine using Python, Node.js, and Express to support precision farming.</p>
+            <h3 id="prj-shamba">Shamba Smart — Smart Agriculture Platform</h3>
+
+            <p>
+              Created a precision farming platform that supports farmers through crop recommendations,
+              soil data analysis, backend APIs, and user-focused agricultural decision support features.
+            </p>
+
             <div class="row">
               <span class="pill">Node.js</span>
-              <span class="pill">Python</span>
-              <span class="pill">Express</span>
+              <span class="pill">Express.js</span>
+              <span class="pill">REST APIs</span>
+              <span class="pill">Agritech</span>
+              <span class="pill">Data Insights</span>
             </div>
+
             <div class="actions">
-              <a class="btn" href="https://agri-tech-app.onrender.com/" target="_blank" rel="noopener">Live Demo</a>
+              <a
+                class="btn"
+                href="https://agri-tech-app.onrender.com/"
+                target="_blank"
+                rel="noopener"
+              >
+                Live Demo
+              </a>
             </div>
           </div>
         </article>
@@ -243,58 +628,132 @@
   <section id="experience">
     <div class="container">
       <h2 class="section-title">Experience</h2>
-      <p class="section-sub">Relevant experience in backend development, microservices, and machine learning engineering.</p>
+
+      <p class="section-sub">
+        My experience includes software development, IT support, coding instruction,
+        marketing support, documentation, and team collaboration.
+      </p>
+
       <div class="timeline">
         <div class="tl-item">
           <div class="tl-title">Graduate Trainee — Tangazoletu Limited</div>
-          <div class="tl-meta">Feb 2025 – Jun 2025 · Nairobi, KE</div>
+          <div class="tl-meta">Feb 2025 – Jun 2025 · Kenya</div>
+
           <ul>
-            <li>Designed and built microservices using Java Spring Boot for core banking solutions.</li>
-            <li>Collaborated on CI/CD pipeline development using GitLab and automated testing.</li>
+            <li>Designed, developed, and tested backend microservices using Java Spring Boot.</li>
+            <li>Built and reviewed RESTful APIs for core banking integration using Postman.</li>
+            <li>Participated in debugging, testing, documentation, and software improvement processes.</li>
+            <li>Collaborated within Agile teams during sprint planning, stand-ups, and code reviews.</li>
+            <li>Worked with Git and GitLab CI/CD pipelines for version control and collaboration.</li>
           </ul>
         </div>
+
         <div class="tl-item">
-          <div class="tl-title">ICT Intern — Ministry of Public Service</div>
-          <div class="tl-meta">Apr 2024 – Aug 2024 · Nairobi, KE</div>
+          <div class="tl-title">Robotics & Coding Instructor / Marketing Assistant — STEM ROBO</div>
+          <div class="tl-meta">Kenya</div>
+
           <ul>
-            <li>Assisted in backend system integration and provided support for IT infrastructure.</li>
-            <li>Worked on developing secure and scalable APIs for internal tools.</li>
+            <li>Taught children robotics and coding through practical and interactive learning sessions.</li>
+            <li>Assisted in organizing student learning activities and support programs.</li>
+            <li>Participated in marketing and promotional activities supporting program growth.</li>
+            <li>Communicated effectively with students, parents, and team members.</li>
+            <li>Developed leadership, coordination, presentation, and communication skills.</li>
+          </ul>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-title">ICT Intern — Ministry of Public Service, Performance and Delivery Management</div>
+          <div class="tl-meta">Apr 2024 – Aug 2024 · Kenya</div>
+
+          <ul>
+            <li>Supported digital systems and technical operations across departments.</li>
+            <li>Assisted with troubleshooting, documentation, and workflow process improvements.</li>
+            <li>Collaborated with teams supporting cybersecurity and digital transformation initiatives.</li>
+            <li>Provided technical support and assisted in maintaining operational efficiency.</li>
           </ul>
         </div>
       </div>
     </div>
   </section>
- <section id="contact">
+
+  <section id="education">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+
+      <p class="section-sub">
+        My academic and professional training background.
+      </p>
+
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-title">Bachelor of Science in Computer Science — University of Embu</div>
+          <div class="tl-meta">2020 – 2024</div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-title">Software Engineering — Power Learn Project</div>
+          <div class="tl-meta">May 2024 – September 2024</div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-title">Certificate in Computer Application Packages — Kenya Institute of Management</div>
+          <div class="tl-meta">January 2020 – March 2020</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
     <div class="container">
       <h2 class="section-title">Contact Information</h2>
-      <p class="section-sub">You can reach out to me via the following:</p>
+
+      <p class="section-sub">
+        You can reach out to me through the following:
+      </p>
+
       <div class="about-card">
-        <!-- Email Button -->
-        <a href="mailto:miriamkwambui@gmail.com" class="btn primary" target="_blank" rel="noopener">
-          📧 Email Me
-        </a>
+        <div class="row">
+          <a
+            href="mailto:miriamkwambui@gmail.com"
+            class="btn primary"
+            target="_blank"
+            rel="noopener"
+          >
+            📧 Email Me
+          </a>
 
-        <!-- Phone Button -->
-        <a href="tel:+254790413351" class="btn primary" target="_blank" rel="noopener">
-          📱 Call Me
-        </a>
+          <a
+            href="tel:+254790413351"
+            class="btn primary"
+            target="_blank"
+            rel="noopener"
+          >
+            📱 Call Me
+          </a>
 
-        <!-- GitHub Button -->
-        <a href="https://github.com/Karanja6" class="btn primary" target="_blank" rel="noopener">
-          💻 Visit GitHub
-        </a>
+          <a
+            href="https://github.com/Karanja6"
+            class="btn primary"
+            target="_blank"
+            rel="noopener"
+          >
+            💻 Visit GitHub
+          </a>
+        </div>
       </div>
     </div>
   </section>
 
   <footer>
     <div class="container">
-      <div>© <span id="year"></span> Miriam Wambui · Crafted with passion · <a href="#top">Back to top ↑</a></div>
+      <div>
+        © <span id="year"></span> Miriam Wambui · Crafted with passion ·
+        <a href="#top">Back to top ↑</a>
+      </div>
     </div>
   </footer>
 
   <script>
-    // Dark/Light mode toggle (simple CSS variable swap)
     const modeBtn = document.getElementById('mode');
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     const state = { dark: true };
@@ -309,6 +768,7 @@
       modeBtn.textContent = '☀️';
       state.dark = false;
     }
+
     function setDark() {
       document.documentElement.style.setProperty('--bg', '#0b0f1a');
       document.documentElement.style.setProperty('--bg-soft', '#0f1424');
@@ -319,52 +779,48 @@
       modeBtn.textContent = '🌙';
       state.dark = true;
     }
-    (prefersDark ? setDark : setLight)();
 
-    modeBtn.addEventListener('click', () => (state.dark ? setLight() : setDark()));
+    if (prefersDark) {
+      setDark();
+    } else {
+      setLight();
+    }
 
-    // Simple contact form (mailto fallback + inline success message)
-    const form = document.getElementById('contactForm');
-    const status = document.getElementById('formStatus');
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const name = document.getElementById('name').value.trim();
-      const email = document.getElementById('email').value.trim();
-      const message = document.getElementById('message').value.trim();
-      const subject = encodeURIComponent(`Portfolio inquiry from ${name}`);
-      const body = encodeURIComponent(`${message}\n\nFrom: ${name} (${email})`);
-      window.location.href = `mailto:miriamkwambui@gmail.com?subject=${subject}&body=${body}`;
-      status.classList.remove('hide');
-      status.textContent = 'Thanks! Your email client will open now — feel free to send.';
-      form.reset();
+    modeBtn.addEventListener('click', () => {
+      if (state.dark) {
+        setLight();
+      } else {
+        setDark();
+      }
     });
 
-    // Year
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // Smooth reveal on scroll
-    const revealables = document.querySelectorAll('.card, .about-card, .badge, .hero-card, .tl-item');
+    const revealables = document.querySelectorAll(
+      '.card, .about-card, .badge, .hero-card, .tl-item'
+    );
+
     const io = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.animate([
-            { opacity: 0, transform: 'translateY(12px)' },
-            { opacity: 1, transform: 'translateY(0)' }
-          ], { duration: 500, easing: 'cubic-bezier(.2,.6,.2,1)', fill: 'forwards' });
+          entry.target.animate(
+            [
+              { opacity: 0, transform: 'translateY(12px)' },
+              { opacity: 1, transform: 'translateY(0)' }
+            ],
+            {
+              duration: 500,
+              easing: 'cubic-bezier(.2,.6,.2,1)',
+              fill: 'forwards'
+            }
+          );
+
           io.unobserve(entry.target);
         }
       });
     }, { threshold: .12 });
-    revealables.forEach(el => io.observe(el));
 
-    // Download CV: set to your hosted PDF later
-    document.getElementById('downloadCV').addEventListener('click', (e) => {
-      const cvUrl = '#'; // Replace with your hosted CV PDF URL (e.g., GitHub raw or Google Drive direct link)
-      if (cvUrl === '#') {
-        e.preventDefault();
-        alert('Upload your CV PDF and replace the cvUrl in script to enable download.');
-      }
-    });
+    revealables.forEach((el) => io.observe(el));
   </script>
 </body>
 </html>
